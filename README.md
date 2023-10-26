@@ -18,15 +18,15 @@ pip install -r requirements.txt
 
 # Kullanım
 
-- -Bu repo'yu bilgisayarınıza klonlayın veya ZIP dosyasını indirin.
+- Bu repo'yu bilgisayarınıza klonlayın veya ZIP dosyasını indirin.
 
-- -Terminal veya komut istemcisini açın ve betiğin bulunduğu klasöre gidin.
+- Terminal veya komut istemcisini açın ve betiğin bulunduğu klasöre gidin.
 
-- -Betiği çalıştırmak için aşağıdaki komutu kullanın:
+- Betiği çalıştırmak için aşağıdaki komutu kullanın:
   ```python
   python shell_script.py
   ```
-- -Kabuk betiği başlatıldığında, aşağıdaki komutları kullanabilirsiniz:
+- Kabuk betiği başlatıldığında, aşağıdaki komutları kullanabilirsiniz:
 
     - **cd <directory>:** Mevcut dizini değiştirin.
     - **ls:** Mevcut dizindeki dosyaları listele.
