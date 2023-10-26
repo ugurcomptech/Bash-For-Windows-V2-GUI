@@ -1,0 +1,14 @@
+2023-10-26 18:43:04 - User: u�ur, Command: search
+2023-10-26 18:44:40 - User: u�ur, Command: ex�t
+2023-10-26 18:45:14 - User: u�ur, Command: search
+2023-10-26 18:46:28 - User: uğur, Command: search
+2023-10-26 18:49:05 - User: uğur, Command: search re
+2023-10-26 18:49:43 - User: uğur, Command: dir
+2023-10-26 18:52:48 - User: uğur, Command: py bash.py
+2023-10-26 18:53:19 - User: uğur, Command: help
+2023-10-26 18:53:28 - User: uğur, Command: show
+2023-10-26 18:53:58 - User: uğur, Command: show
+2023-10-26 18:57:22 - User: uğur, Command: help
+2023-10-26 18:59:02 - User: uğur, Command: e
+2023-10-26 18:59:03 - User: uğur, Command: e
+2023-10-26 18:59:11 - User: uğur, Command: help
