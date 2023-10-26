@@ -27,19 +27,19 @@ pip install -r requirements.txt
   python shell_script.py
   ```
 - -Kabuk betiği başlatıldığında, aşağıdaki komutları kullanabilirsiniz:
-- 
-    **cd <directory>:** Mevcut dizini değiştirin.
-    **ls:** Mevcut dizindeki dosyaları listele.
-    **exit:** Kabuk betimden çıkın.
-    **move <source> <destination>:** Dosya veya dizini taşıyın.
-    **copy <source> <destination>:** Dosya veya dizini kopyalayın.
-    **delete <file>:** Bir dosyayı silin.
-    **create <file>:** Yeni bir dosya oluşturun.
-    **search <keyword>:** Bir anahtar kelime içeren dosyaları arayın.
-    **up:** Üst dizine gidin.
-    **back:** Alt dizine gidin.
-    **show <directory>:** Bir dizinin içeriğini gösterin.
-    **help:** Yardım mesajını gösterin.
+
+    - **cd <directory>:** Mevcut dizini değiştirin.
+    - **ls:** Mevcut dizindeki dosyaları listele.
+    - **exit:** Kabuk betimden çıkın.
+    - **move <source> <destination>:** Dosya veya dizini taşıyın.
+    - **copy <source> <destination>:** Dosya veya dizini kopyalayın.
+    - **delete <file>:** Bir dosyayı silin.
+    - **create <file>:** Yeni bir dosya oluşturun.
+    - **search <keyword>:** Bir anahtar kelime içeren dosyaları arayın.
+    - **up:** Üst dizine gidin.
+    - **back:** Alt dizine gidin.
+    - **show <directory>:** Bir dizinin içeriğini gösterin.
+    - **help:** Yardım mesajını gösterin.
 
 
 
