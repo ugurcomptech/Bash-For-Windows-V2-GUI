@@ -26,6 +26,9 @@ pip install -r requirements.txt
 - Bu repo'yu bilgisayarınıza klonlayın veya ZIP dosyasını indirin.
 
 - Terminal veya komut istemcisini açın ve betiğin bulunduğu klasöre gidin.
+    ```python
+    cd C:\users\username\downloads\Bash-For-Windows-V2-GUI.zip
+    ```
 
 - Betiği çalıştırmak için aşağıdaki komutu kullanın:
   ```python
