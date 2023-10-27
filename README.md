@@ -1,12 +1,17 @@
-# Bash-For-Windows
+# Bash-For-Windows.V2 (GUİ)
 
-Bu Python kabuk betiği, kullanıcı dostu bir arayüz sağlar ve temel dosya işlemlerini gerçekleştirir.
+Bash for Windows, kullanıcıların komut satırı benzeri bir etkileşimli terminal deneyimi yaşamalarını sağlayan basit bir GUI uygulamasıdır.
+
+
+![image](https://github.com/ugurcomptech/Bash-For-Windows/assets/133202238/c65c6c61-48ae-48b2-a896-a3eb1c04b344)
+
 
 ## Gereksinimler
 
 Bu betiği çalıştırmak için aşağıdaki gereksinimlere ihtiyacınız vardır:
 
 - Python 3.x
+- tkinter (genellikle Python ile birlikte gelir)
 - colorama kütüphanesi
 - prompt_toolkit kütüphanesi
 
