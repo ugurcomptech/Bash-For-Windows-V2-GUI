@@ -83,6 +83,15 @@ def search_files(keyword):
     except FileNotFoundError:
         print("'findstr' command not found. This feature may not work on your system.")
 
+def edit_file(file):
+    try:
+        editor = "notepad.exe"  # Varsayılan metin düzenleyiciyi Windows için Notepad olarak ayarlayın. Sistem tipinize göre değiştirebilirsiniz.
+        subprocess.run([editor, file])
+        print(f"Opened {file} for editing.")
+    except FileNotFoundError:
+        print("Metin düzenleyici bulunamadı. Bu özellik sisteminizde çalışmayabilir.")
+
+
 def go_up():
     global current_directory
     current_directory = os.path.dirname(current_directory)
@@ -121,7 +130,8 @@ available_commands = [
     "search",
     "up",
     "show",  
-    "help",  
+    "help",
+    "edit",  
 
 ]
 
@@ -141,6 +151,7 @@ def show_help():
     print("search <keyword>: Search for files containing a keyword.")
     print("up: Navigate to the parent directory.")
     print("show <directory>: Show the contents of a directory.")
+    print("edit: Used to change file content ")
     print("help: Show this help message.")
 
 
@@ -193,6 +204,9 @@ while True:
             go_back()
         elif user_input.lower() == "help":
             show_help()
+        elif user_input.startswith("edit "):
+            _, file = user_input.split()
+            edit_file(file)
         elif user_input.lower().startswith("show "):
             directory = user_input[5:]
             show_directory_contents(directory)
