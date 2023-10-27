@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 - Betiği çalıştırmak için aşağıdaki komutu kullanın:
   ```python
-  python shell_script.py
+  python gui_bash.py
   ```
 - Kabuk betiği başlatıldığında, aşağıdaki komutları kullanabilirsiniz:
 
