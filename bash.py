@@ -9,29 +9,28 @@ from prompt_toolkit.completion import Completer, Completion
 from prompt_toolkit import ANSI
 import datetime
 
-
-
+# Otomatik renk sıfırlama özelliğini etkinleştir
 init(autoreset=True)
 
+# Kullanıcı komut geçmişi ve mevcut dizin
 history = []
 current_directory = os.getcwd()
 
-
-
+# Dizin içeriğini gösteren işlev
 def show_directory_contents(directory):
     print(f"Contents of directory '{directory}':")
     list_files(directory)
 
+# Kullanıcı komutlarını kaydetmek için kullanılan dosya
+log_file = "command_log.txt"
 
-log_file = "command_log.txt"  # Komut günlüğünün kaydedileceği dosya
-
-
+# Kullanıcı komutlarını kaydetmek için işlev
 def log_command(user, command):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(log_file, "a", encoding="utf-8") as log:
         log.write(f"{timestamp} - User: {user}, Command: {command}\n")
 
-
+# Dosya veya dizin taşıma işlemini gerçekleştiren işlev
 def move_file(src, dest):
     try:
         shutil.move(src, dest)
@@ -39,6 +38,7 @@ def move_file(src, dest):
     except FileNotFoundError:
         print(f"File not found: {src}")
 
+# Dosya taşıma komutunu işleyen işlev
 def move_file_command(src, dest):
     try:
         shutil.move(src, dest)
@@ -46,6 +46,7 @@ def move_file_command(src, dest):
     except FileNotFoundError:
         print(f"File not found: {src}")
 
+# Dosya veya dizin kopyalama işlemini gerçekleştiren işlev
 def copy_file(src, dest):
     try:
         shutil.copy2(src, dest)
@@ -53,6 +54,7 @@ def copy_file(src, dest):
     except FileNotFoundError:
         print(f"File not found: {src}")
 
+# Dosya silme işlemini gerçekleştiren işlev
 def delete_file(file):
     try:
         os.remove(file)
@@ -60,6 +62,7 @@ def delete_file(file):
     except FileNotFoundError:
         print(f"File not found: {file}")
 
+# Yeni bir dosya oluşturma işlemini gerçekleştiren işlev
 def create_file(file):
     try:
         with open(file, 'w') as f:
@@ -67,11 +70,13 @@ def create_file(file):
     except FileExistsError:
         print(f"File already exists: {file}")
 
+# Mevcut dizindeki dosyaları listelemek için kullanılan işlev
 def list_files():
     files = os.listdir(current_directory)
     for file in files:
         print(file)
 
+# Belirli bir anahtar kelime içeren dosyaları aramak için kullanılan işlev
 def search_files(keyword):
     try:
         result = subprocess.run(f'findstr /M /C:"{keyword}" *.*', shell=True, cwd=current_directory)
@@ -83,6 +88,7 @@ def search_files(keyword):
     except FileNotFoundError:
         print("'findstr' command not found. This feature may not work on your system.")
 
+# Dosya düzenleme işlemini başlatan işlev
 def edit_file(file):
     try:
         editor = "notepad.exe"  # Varsayılan metin düzenleyiciyi Windows için Notepad olarak ayarlayın. Sistem tipinize göre değiştirebilirsiniz.
@@ -91,13 +97,13 @@ def edit_file(file):
     except FileNotFoundError:
         print("Metin düzenleyici bulunamadı. Bu özellik sisteminizde çalışmayabilir.")
 
-
+# Üst dizine gitmeyi sağlayan işlev
 def go_up():
     global current_directory
     current_directory = os.path.dirname(current_directory)
     os.chdir(current_directory)
 
-
+# Geri gitmeyi sağlayan işlev
 def go_back():
     global current_directory
     parent_directory = os.path.dirname(current_directory)
@@ -108,6 +114,7 @@ def go_back():
     else:
         print("Already at the root directory.")
 
+# Kullanıcı komutlarını tamamlamak için kullanılan sınıf
 class CommandCompleter(Completer):
     def get_completions(self, document, complete_event):
         word = document.get_word_before_cursor()
@@ -119,6 +126,7 @@ class CommandCompleter(Completer):
             return completions
         return []
 
+# Kullanılabilir komutlar listesi
 available_commands = [
     "cd",
     "ls",
@@ -129,16 +137,15 @@ available_commands = [
     "create",
     "search",
     "up",
-    "show",  
+    "show",
     "help",
-    "edit",  
-
+    "edit",  # "edit" komutunu ekledik
 ]
 
-
+# Komut tamamlama işlemini sağlamak için kullanılan nesne
 command_completer = CommandCompleter()
 
-
+# Kullanıcıya mevcut komutları gösteren yardım mesajını gösteren işlev
 def show_help():
     print("Available commands:")
     print("cd <directory>: Change the current directory.")
@@ -151,11 +158,10 @@ def show_help():
     print("search <keyword>: Search for files containing a keyword.")
     print("up: Navigate to the parent directory.")
     print("show <directory>: Show the contents of a directory.")
-    print("edit: Used to change file content ")
+    print("edit <file>: Edit the content of a file")  # "edit" komutunu ekledik
     print("help: Show this help message.")
 
-
-
+# Ana döngü, kullanıcıdan komutları alır ve işler
 while True:
     try:
         user_input = prompt(
@@ -217,6 +223,6 @@ while True:
                 print(f"Command failed: {user_input}")
 
         log_command(getuser(), user_input)
-         
+
     except KeyboardInterrupt:
         print("^C")
