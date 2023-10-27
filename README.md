@@ -36,6 +36,7 @@ pip install -r requirements.txt
     - **delete <file>:** Bir dosyayı silin.
     - **create <file>:** Yeni bir dosya oluşturun.
     - **search <keyword>:** Bir anahtar kelime içeren dosyaları arayın.
+    - **edit:** Dosyaların içeriğini düzenler.
     - **up:** Üst dizine gidin.
     - **back:** Alt dizine gidin.
     - **show <directory>:** Bir dizinin içeriğini gösterin.
