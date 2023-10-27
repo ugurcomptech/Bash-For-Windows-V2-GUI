@@ -2,6 +2,8 @@
 
 Bash for Windows, kullanıcıların komut satırı benzeri bir etkileşimli terminal deneyimi yaşamalarını sağlayan basit bir GUI uygulamasıdır.
 
+**Not:** CMD'de veya başka bir terminalde bu projeyi çalıştırmak isteyenler **bash.py** dosyasını çalıştırabilirler.
+
 
 ![image](https://github.com/ugurcomptech/Bash-For-Windows/assets/133202238/c65c6c61-48ae-48b2-a896-a3eb1c04b344)
 
