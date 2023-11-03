@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 
 
-**Bilgilendirme:** Projenin temel kodları **[sanalzio](https://github.com/ugurcomptech/)** tarafından atılmıştır. Yapılmış olan geliştirmeler ve iyileştirmeler tarafımca yapılıp sizlere sunulmuştur.
+**Bilgilendirme:** Projenin temel kodları **[sanalzio](https://github.com/sanalzio)** tarafından atılmıştır. Yapılmış olan geliştirmeler ve iyileştirmeler tarafımca yapılıp sizlere sunulmuştur.
 
 
 ## Lisans
