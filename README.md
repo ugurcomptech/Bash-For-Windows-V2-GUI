@@ -54,7 +54,13 @@ pip install -r requirements.txt
 
 
 
-**Bilgilendirme:** Projenin temel kodları **[sanalzio](https://github.com/sanalzio)** tarafından atılmıştır. Yapılmış olan geliştirmeler ve iyileştirmeler tarafımca yapılıp sizlere sunulmuştur.
+### Bilgilendirme
+
+Bu proje, temel kodların orijinal olarak **[sanalzio](https://github.com/sanalzio)** tarafından oluşturulduğu bir projedir. Daha sonrasında ise bu projeye yapılan geliştirmeler ve iyileştirmeler tarafımdan gerçekleştirilmiş ve sizlere sunulmuştur.
+
+Orijinal kodların sahibi olan **[sanalzio](https://github.com/sanalzio)**, bu projenin temelini atmıştır. Ben ise bu temel üzerine çalışarak projeyi geliştirmiş ve daha işlevsel hale getirmiş bulunmaktayım. Bu iyileştirmelerin amacı, projenin daha kullanıcı dostu ve verimli bir şekilde çalışmasını sağlamaktır.
+
+Yaptığımız bu çalışmalar sonucunda projenin daha işlevsel hale gelmesi ve kullanıcıların ihtiyaçlarına daha iyi cevap vermesi hedeflenmiştir. Herhangi bir soru, geri bildirim veya katkıda bulunma isteği olduğunda lütfen iletişime geçmekten çekinmeyin.
 
 
 ## Lisans
