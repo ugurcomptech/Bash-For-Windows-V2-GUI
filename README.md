@@ -54,6 +54,9 @@ pip install -r requirements.txt
 
 
 
+**Bilgilendirme:** Projenin temel kodları **[sanalzio](https://github.com/ugurcomptech/)** tarafından atılmıştır. Yapılmış olan geliştirmeler ve iyileştirmeler tarafımca yapılıp sizlere sunulmuştur.
+
+
 ## Lisans
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
